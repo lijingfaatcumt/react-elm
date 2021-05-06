@@ -1,13 +1,112 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.flex{
+  display: flex;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+.flex-1{
+  flex: 1;
+}
+.flex-none{
+  flex: none;
+}
+.flex-auto{
+  flex: auto;
+}
+.align-items-center{
+  align-items: center;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.space-between{
+  justify-content: space-between;
+}
+.space-around{
+  justify-content: space-around;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.h-0{
+  height: 0;
+}
+.h-100p{
+  height: 100%;
+}
+.overflow-auto{
+  overflow: auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.fixed{
+  position: fixed;
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+
+.filled{
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.w-25p{
+  width: 25%;
+}
+.w-100p{
+  width: 100%;
+}
+.text-align-center{
+  text-align: center;
+}
+
+.m-r-1{
+  margin-right: -1px;
+}
+
+.color-blue{
+  color: blue;
+}
+
+.bg-blue{
+  background: blue;
+}
+
+.bg-white{
+  background: white;
+}
+.border-top{
+  border-top: 1px solid #999;
+}
+
+.border-bottom{
+  border-bottom: 1px solid #999;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root{
+  height: 100%;
+}
+.title{
+  height: 45px;
+  line-height: 45px;
+  background: blue;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.divider{
+  height: 20px;
+  background: rgb(245, 245, 245);
 }

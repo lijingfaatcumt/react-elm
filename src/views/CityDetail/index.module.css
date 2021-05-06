@@ -1,0 +1,42 @@
+.padding{
+  padding: 10px 20px;
+}
+.margin_bottom_10{
+  margin-bottom: 10px;
+}
+.title{
+  font-size: 16px;
+  line-height: 20px;
+  color: #333;
+  margin-bottom: 6px;
+}
+.content{
+  font-size: 14px;
+  line-height: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #999;
+}
+.search_container:hover .suggestions{
+  display: block;
+}
+.suggestions{
+  display: none;
+  background: white;
+  top: 100%;
+  width: 100%;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+.suggestion{
+  line-height: 24px;
+}
+.input{
+  height: 32px;
+  border-radius: 4px;
+}
+.button{
+  border: none;
+  color: white;
+}

@@ -1,0 +1,7 @@
+.tabs{
+  height: 60px;
+  border-top: 1px solid #999;
+}
+.active{
+  color: green;
+}

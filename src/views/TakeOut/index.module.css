@@ -1,0 +1,29 @@
+.link{
+  height: 72px;
+}
+.link .img{
+  width: 42px;
+  margin-bottom: 8px;
+}
+.padding_vertical{
+  padding: 16px 0;
+}
+.padding_horizontal{
+  padding: 0 20px;
+}
+
+.shop_list img{
+  margin-right: 8px;
+}
+
+.premium::before{
+  content: "品牌";
+  background: yellow;
+  border-radius: 2px;
+  display: inline-block;
+  margin-right: 4px;
+}
+.title{
+  padding-top: 20px;
+  line-height: 24px;
+}
