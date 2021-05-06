@@ -24,8 +24,8 @@ const tabs = [{
   icon: 'icon-wodedangxuan'
 }]
 
-export default function Home({children}) {
-  const {path} = useRouteMatch()
+export default function Home() {
+  const {path, url} = useRouteMatch()
   const {pathname} = useLocation()
   const [selected, setSelected] = useState(pathname.replace(path + '/', ''))
   function getTab({key, title, icon}, active) {
