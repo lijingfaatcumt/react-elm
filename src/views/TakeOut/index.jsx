@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { useLocation, Link } from "react-router-dom";
-import queryString from 'query-string'
+import { Link } from "react-router-dom";
+import { useSelector } from 'react-redux'
 import { Carousel } from 'antd-mobile'
 import { getPosition } from '../../api/city'
 import { getFoodCatList, getShopList } from '../../api/food'
@@ -62,9 +62,7 @@ function Swiper({cats}) {
 }
 
 export default function TakeOut() {
-  const location = useLocation()
-  const query = queryString.parse(location.search)
-  const geohash = query && query.geohash
+  const geohash = useSelector(state => state.geohash)
   const [postion, setPosition] = useState(null)
   const [cats, setCats] = useState([])
   const [shops, setShops] = useState([])

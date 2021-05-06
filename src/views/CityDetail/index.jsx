@@ -3,6 +3,8 @@ import { useHistory, useParams } from 'react-router'
 import { getCityDetail, searchPositions } from '../../api/city'
 import style from './index.module.css'
 import Storage from '../../utils/storage'
+import { SET } from '../../redux/geohash'
+import { useDispatch } from 'react-redux'
 
 function Search({search}) {
   const [keyword, setKeyword] = useState('')
@@ -68,6 +70,7 @@ export default function CityDetail() {
   const [city, setCity] = useState(null)
   const [postions, setPositions] = useState(null)
   const history = useHistory()
+  const dispatch = useDispatch()
   useEffect(() => {
     getCityDetail(id)
       .then(res => {
@@ -84,7 +87,8 @@ export default function CityDetail() {
       }).catch(err=> console.error(err.message))
   }
   function handleClick(geohash) {
-    history.push(`/home/take-out?geohash=${geohash}`)
+    dispatch(SET(geohash))
+    history.push(`/home/take-out`)
   }
   return (
     <div className="flex-column h-100p">
