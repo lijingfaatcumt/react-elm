@@ -1,0 +1,15 @@
+.search_wraper{
+  height: 36px;
+}
+.search_wraper button{
+  width: 76px;
+  margin-left: 16px;
+}
+.img{
+  margin-right: 8px;
+}
+
+.shop{
+  padding: 12px 0;
+  height: 100px;
+}

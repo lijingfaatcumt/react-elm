@@ -17,6 +17,9 @@
 .align-items-center{
   align-items: center;
 }
+.align-items-start{
+  align-items: flex-start;
+}
 .justify-content-center{
   justify-content: center;
 }
@@ -109,4 +112,7 @@ html, body, #root{
 .divider{
   height: 20px;
   background: rgb(245, 245, 245);
+}
+.padding-20{
+  padding: 20px
 }
